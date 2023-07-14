@@ -1,31 +1,33 @@
-# QUESTION 1:
+##QUESTION 1:
 def countDigits():
-  number = input("Enter any number greater than zero")
-  number = int(number)
-  if(number < 10 ):
+  number = input("Enter any number greater than zero: ")
+  numberm = int(number)
+  if(numberm < 10 ):
     return 1
   else: 
     count = 0
-    while(number>9):
+    while(numberm>9):
       count=count+1
-      number=number//10
-  print("The number of digits in the number are:",count)
+      numbern=numberm//10
+  print("The number of digits in the number are: ",count)
     
-countDigits();
+# countDigits();
 
-# QUESTION 2:
+##QUESTION 2:
 def findMax():
   list1 = []
-  number = int(input("Enter any numbers you want"))
-  for i in range(0, number):
-    list1.append(number)
-  if list1.len() == 1:
-    return input
+  number = input("Enter any numbers you want")
+  print(len(number))
+  for i in range(0, len(number)):
+    print(i)
+    list1.append(number[i])
+  if len(list1) == 1:
+    return number
   else :
-    list1.len() > 1
-    list2 = list1.sort()
-    return(list2.len -1)
-findMax();
+    # len(list1) > 1
+    list2 = sorted(list1)
+    print(list2[-1])
+# findMax();
   
 
 def main():
@@ -40,3 +42,5 @@ def main():
     exit()
   else : 
     print("please choose a number between 1 to 4")
+
+main();
